@@ -83,11 +83,12 @@ char * getCommand() {
 int main() {
     char * command = getCommand();
 
+    // Print result
     printf("\n---- BEGIN ---\n");
-
     printf("\n%s\n", command);
-
     printf("\n---- END ---\n");
 
+    // Always clear data allocated in heap memory
+    free(command);
     return 1;
 }
