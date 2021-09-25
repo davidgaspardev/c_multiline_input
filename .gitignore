@@ -1,0 +1,5 @@
+# Ignore compiler generated files
+*.out
+
+# Ignore C temporary files
+*.temp.c
